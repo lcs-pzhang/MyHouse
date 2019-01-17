@@ -42,24 +42,38 @@ public class Tree
         trunk.changeSize(50);
         trunk.changeColor("black");
         trunk.makeVisible();
+        trunk.moveHorizontal(x);
+        trunk.moveVertical(y);
         
+        // translate horizontally and vertically
         tree.moveVertical(155);
         tree.moveHorizontal(40);
         tree.changeSize(80, 80);
         tree.changeColor("green");
         tree.makeVisible();
+        tree.moveHorizontal(x);
+        tree.moveVertical(y);
         
+        
+        // translate horizontally and vertically
         layer.moveVertical(140);
         layer.moveHorizontal(40);
         layer.changeSize(60, 60);
         layer.changeColor("green");
         layer.makeVisible();
+        layer.moveHorizontal(x);
+        layer.moveVertical(y);
         
+        
+         // translate horizontally and vertically
         top.moveVertical(130);
         top.moveHorizontal(40);
         top.changeSize(40, 40);
         top.changeColor("green");
         top.makeVisible();
+        top.moveHorizontal(x);
+        top.moveVertical(y);
+        
         
        
         // translate the tree to the specified location

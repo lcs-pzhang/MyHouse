@@ -18,6 +18,9 @@ public class MyHouse
     private Circle glass;
     private Square post;
     private Tree tree1;
+    private Square sky;
+    private Circle knob;
+    private Triangle box;
 
     /**
      * The job of a constructor is to initialize all the instance variables
@@ -25,6 +28,7 @@ public class MyHouse
     public MyHouse()
     {
         // initialise instance variables
+        sky = new Square();
         sun = new Circle();
         roof = new Triangle();
         base = new Square();
@@ -33,10 +37,17 @@ public class MyHouse
         window = new Triangle();
         glass = new Circle();
         post = new Square();
-        tree1 = new Tree(0, 0);
-      
-        //invoke the method to draw the house
+        knob = new Circle();
+        box = new Triangle();
+        
+        // invoke the method to draw the house
         drawHouse();
+        
+        // use the method to draw the tree
+        tree1 = new Tree(300, 300);
+       
+      
+
         
     }
 
@@ -46,6 +57,13 @@ public class MyHouse
     public void drawHouse()
     {
         // Put the sun in position
+        
+        sky.changeColor("blue");
+        sky.changeSize(600);
+        sky.moveVertical(-50);
+        sky.moveHorizontal(-60);
+        sky.makeVisible();
+        
         sun.moveHorizontal(-80);
         sun.changeSize(100);
         sun.changeColor("yellow");
@@ -54,7 +72,7 @@ public class MyHouse
         
         roof.moveVertical(35);
         roof.changeSize(100, 170);
-        roof.changeColor("blue");
+        roof.changeColor("yellow");
         roof.moveHorizontal(65);
         roof.makeVisible();
         
@@ -77,7 +95,7 @@ public class MyHouse
         window.moveVertical(65);
         window.moveHorizontal(70);
         window.changeSize(40, 60);
-        window.changeColor("yellow");
+        window.changeColor("blue");
         window.makeVisible();
         
         glass.moveVertical(100);
@@ -87,10 +105,24 @@ public class MyHouse
         glass.makeVisible();
         
         post.moveVertical(160);
-        post.moveHorizontal(125);
+        post.moveHorizontal(143);
         post.changeSize(40);
-        post.changeColor("blue");
-        post.makeVisible();
+        post.changeColor("black");
+        post.makeVisible(); 
+        
+        knob.moveVertical(155);
+        knob.moveHorizontal(60);
+        knob.changeSize(15);
+        knob.changeColor("green");
+        knob.makeVisible();
+        
+        box.moveVertical(145);
+        box.moveHorizontal(170);
+        box.changeColor("red");
+        box.changeSize(50, 50);
+        box.makeVisible();
+        
+      
         
      
         
