@@ -18,6 +18,8 @@ public class MyHouse
     private Circle glass;
     private Square post;
     private Tree tree1;
+    private Tree tree2;
+    private Tree tree3;
     private Square sky;
     private Circle knob;
     private Triangle box;
@@ -45,6 +47,8 @@ public class MyHouse
         
         // use the method to draw the tree
         tree1 = new Tree(300, 300);
+        tree2 = new Tree(300, 50);
+        tree3 = new Tree(200, 100);
        
       
 
